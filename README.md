@@ -31,15 +31,15 @@ To load the data form python using the cursor to operate the **DELETE** command 
 :joystick:  **4. User Interface (grades.py):**
 An interface that allows to manage and interact with the grades database and obtain the following information:
 
-**Student:**
+Student:
 - Personal Data;
 - Grades for every / specific course
   
-**EXAM:**
+EXAM:
 - Search for the exam to see which room/rooms and building it will hold and the respective date;
 - Retrieve the average grade for a given group (Student, State, Course or Exam Type);
  
-**Room:**
+Room:
 - Search for rooms based on given characteristics (has computer, has projector, is accessible);
 
 :chart_with_upwards_trend:  **5. Extra (extra.py):**
