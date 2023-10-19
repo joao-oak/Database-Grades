@@ -54,8 +54,7 @@ In order to extract some meaningful information from the database the following 
 
 - Histogram with the grades distribution;
 - Bar chart with the average grade by course;
-- Scatter plot with gpa for each student;
-- Scatter plot with average grade by student (regression)
+- Scatter plot with relation between gpa and average grades for each student with a linear regression.
 
 ---
 **Contribution of each student in the project:**
