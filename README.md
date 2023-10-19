@@ -35,7 +35,7 @@ Student:
 - Personal Data;
 - Grades for every / specific course
   
-EXAM:
+Exam:
 - Search for the exam to see which room/rooms and building it will hold and the respective date;
 - Retrieve the average grade for a given group (Student, State, Course or Exam Type);
  
