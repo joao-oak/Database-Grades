@@ -26,7 +26,9 @@ Based on the fields provided, a UML model of the database was created and the re
 
 **2. Creation of SQL script (grades.sql):**
 This script will create the tables in the database. For this section we also created 2 triggers:
+
 - trigger_validate_exam_room_capacity: this trigger was created on attendance table. It makes sure that the amount of students that are going to do an exam is not greater than the   capacity of the room;
+
 - trigger_validate_exam_room_constraints: this trigger was also created on attendance. It guarantees that id there's any student with a disability, the room needs to be assecible for him. On the other hand, it also asure that if the exam needs to be in a room with projector or computer, the room has this devices. 
 
 
@@ -56,9 +58,14 @@ In order to extract some meaningful information from the database the following 
 - Scatter plot with average grade by student (regression)
 ---
 **Contribution of each student in the project:**
+
 The contribution of each student in the project in presented in a range from 0 to 100% representing the effort that each one made:
+
 - Abílio Neves - up200000406 : 100%
+
 - João Carvalho - up201507023 : 100%
+
 - Md. Wakil Ahmad - up202109215 :
+
 - Silvia Tavares - up202204392 : 100%
 
