@@ -29,12 +29,21 @@ This script will create the tables in the database.
 To load the data form python using the cursor to operate the **DELETE** command to delete all records and **INSERT** command to popullate de database.
 
 :joystick:  **4. User Interface (grades.py):**
-An interface that allows to manage and interact with the grades database. T:
+An interface that allows to manage and interact with the grades database and obtain the following information:
 
-- allows the user to consult some information from the database.
+**Student:**
+- Personal Data;
+- Grades for every / specific course
+  
+**EXAM:**
+- Search for the exam to see which room/rooms and building it will hold and the respective date;
+- Retrieve the average grade for a given group (Student, State, Course or Exam Type);
+ 
+**Room:**
+- Search for rooms based on given characteristics (has computer, has projector, is accessible);
 
 :chart_with_upwards_trend:  **5. Extra (extra.py):**
-In order to extract some meaningful information from the database four plots were created:
+In order to extract some meaningful information from the database the following plots were created:
 
 - Relation between age and time
 - Relation between distance and time
