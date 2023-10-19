@@ -49,4 +49,5 @@ In order to extract some meaningful information from the database the following 
 - Relation between distance and time
 - Relation between event and sex
 - Relation between event year and distance
+  
 ![image](https://github.com/silviatvares/Database-Grades/assets/116115008/591397e4-755b-4ffb-ad25-325d2c7f507e)
