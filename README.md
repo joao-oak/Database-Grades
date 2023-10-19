@@ -45,9 +45,16 @@ Room:
 :chart_with_upwards_trend:  **5. Extra (extra.py):**
 In order to extract some meaningful information from the database the following plots were created:
 
-- Relation between age and time
-- Relation between distance and time
-- Relation between event and sex
-- Relation between event year and distance
+- Histogram with the grades distribution;
+- Bar chart with the average grade by course;
+- Scatter plot with gpa for each student;
+- Scatter plot with average grade by student (regression)
+---
+:chart_with_upwards_trend:  **Contribution of each student in the project:**
+The contribution of each student in the project in presented in a range from 0 to 100% representing the effort that each one made:
+- Abílio Neves - up200000406 : 100%
+- João Carvalho - up201507023 : 100%
+- Md. Wakil Ahmad - up202109215 :
+- Silvia Tavares - up202204392: 100%
   
 ![image](https://github.com/silviatvares/Database-Grades/assets/116115008/591397e4-755b-4ffb-ad25-325d2c7f507e)
