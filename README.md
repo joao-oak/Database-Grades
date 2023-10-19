@@ -27,7 +27,7 @@ Based on the fields provided, a UML model of the database was created and the re
 :gear:  **2. Creation of SQL script (grades.sql):**
 This script will create the tables in the database. For this section we also created 2 triggers:
 - trigger_validate_exam_room_capacity: this trigger was created on attendance table. It makes sure that the amount of students that are going to do an exam is not greater than the   capacity of the room;
-- trigger_validate_exam_room_constraints: this trigger was also created on ON attendance. It guarantees that id there's any student with a disability, the room needs to be assecible for him. On the other hand, it also asure that if the exam needs to be in a room with projector or computer, the room has this devices. 
+- trigger_validate_exam_room_constraints: this trigger was also created on attendance. It guarantees that id there's any student with a disability, the room needs to be assecible for him. On the other hand, it also asure that if the exam needs to be in a room with projector or computer, the room has this devices. 
 
 
 :hourglass_flowing_sand:  **3. Load the Data into the Data Base (load_grades.py):**
