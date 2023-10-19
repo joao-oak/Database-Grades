@@ -10,7 +10,7 @@ University JS is a university that offers to its students an intensive 1-year As
 The requirements for the database are:
 
 A student must be enrolled in at least one course, and there is not a limit for the number of courses that a student can be enrolled in. Each individual enrollment is an event with an associated ID.
-The university needs to store the following data for each student: first_name, last_name, email, date_of_birth, state, gpa from high school, and if the student needs accessibility (for example, a room needs to have a ramp or an elevator so that a student in a wheelchair can get access to it). Each student has a unique student number.
+The university needs to store the following data for each student: first_name, last_name, email, date_of_birth, state, gpa , and if the student needs accessibility (for example, a room needs to have a ramp or an elevator so that a student in a wheelchair can get access to it). Each student has a unique student number.
 Email is composed by <first_name>.<last_name>@jsuniversity.edu.
 
 A room has a name, a maximum capacity, and can have or not projector and/or computers. Also, some of the rooms are accessible to students with disabilities. A room belongs to a building which also has a name. In the whole university there are no rooms with the same name. And the names of the buildings are also unique. There is an identifier code for every room and building.
