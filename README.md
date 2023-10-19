@@ -50,7 +50,7 @@ In order to extract some meaningful information from the database the following 
 - Scatter plot with gpa for each student;
 - Scatter plot with average grade by student (regression)
 ---
-:chart_with_upwards_trend:  **Contribution of each student in the project:**
+:handshake:  **Contribution of each student in the project:**
 The contribution of each student in the project in presented in a range from 0 to 100% representing the effort that each one made:
 - Abílio Neves - up200000406 : 100%
 - João Carvalho - up201507023 : 100%
