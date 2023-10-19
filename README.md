@@ -26,7 +26,7 @@ This script will create the tables in the database.
 
 
 :hourglass_flowing_sand:  **3. Load the Data into the Data Base (load_grades.py):**
-To load the data form python using **DELETE** command to delete all records and **INSERT** command to popullate de database.
+To load the data form python using the cursor to operate the **DELETE** command to delete all records and **INSERT** command to popullate de database.
 
 :joystick:  **4. User Interface (grades.py):**
 An interface that allows to manage and interact with the grades database. T:
