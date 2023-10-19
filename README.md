@@ -20,20 +20,20 @@ For each course there are several but well-defined evaluation types (exam_names)
 ---
 The project is composed by the following steps:
 
-:dart:  **1. Creation of the UML (uml.png) and Relational Model (relational.txt):**
+**1. Creation of the UML (uml.png) and Relational Model (relational.txt):**
 Based on the fields provided, a UML model of the database was created and the related relation model. 
 
 
-:gear:  **2. Creation of SQL script (grades.sql):**
+**2. Creation of SQL script (grades.sql):**
 This script will create the tables in the database. For this section we also created 2 triggers:
 - trigger_validate_exam_room_capacity: this trigger was created on attendance table. It makes sure that the amount of students that are going to do an exam is not greater than the   capacity of the room;
 - trigger_validate_exam_room_constraints: this trigger was also created on attendance. It guarantees that id there's any student with a disability, the room needs to be assecible for him. On the other hand, it also asure that if the exam needs to be in a room with projector or computer, the room has this devices. 
 
 
-:hourglass_flowing_sand:  **3. Load the Data into the Data Base (load_grades.py):**
+**3. Load the Data into the Data Base (load_grades.py):**
 To load the data form python using the cursor to operate the **DELETE** command to delete all records and **INSERT** command to popullate de database.
 
-:joystick:  **4. User Interface (grades.py):**
+**4. User Interface (grades.py):**
 An interface that allows to manage and interact with the grades database and obtain the following information:
 
 Student:
@@ -47,7 +47,7 @@ Exam:
 Room:
 - Search for rooms based on given characteristics (has computer, has projector, is accessible);
 
-:chart_with_upwards_trend:  **5. Extra (extra.py):**
+**5. Extra (extra.py):**
 In order to extract some meaningful information from the database the following plots were created:
 
 - Histogram with the grades distribution;
@@ -55,7 +55,7 @@ In order to extract some meaningful information from the database the following 
 - Scatter plot with gpa for each student;
 - Scatter plot with average grade by student (regression)
 ---
-:handshake:  **Contribution of each student in the project:**
+**Contribution of each student in the project:**
 The contribution of each student in the project in presented in a range from 0 to 100% representing the effort that each one made:
 - Abílio Neves - up200000406 : 100%
 - João Carvalho - up201507023 : 100%
