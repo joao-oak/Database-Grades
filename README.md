@@ -3,16 +3,19 @@
 ### Silvia Tavares, João Carvalho, Abílio Neves, Md. Wakil Ahmad
 ### Databases, October 2023
 ---
-This project regards the design of a database for the grades, using the tools of SQL and Python. In order to have a better understanding, we created a storytelling to specify the requirements.
+This project regards the design of a database for the grades, using the tools of SQL and Python. In order to have a better understanding, we created a small storytelling:
 
-University JS is a university that offers its students an intensive 1-year associate degree that will prepare them to later enroll in a bachelor's degree of their choice. In order to improve its services, the university intends to use a database to store academic information for all students. For more information about the US education system, visit Education in the United States - Wikipedia.
-As a pilot program to be started in the new academic year, 30 1-year associate degree students were chosen. These students are enrolled in 15 different courses and in the first semester.
+University JS is a university that offers to its students an intensive 1-year Associate Degree that will prepare the students to afterwards enrol in a Bachelor Degree of their choice. With the intent of improving its services, the uni wants to use a database to store academic information of all students. For more information about the US educational system, please visit Education in the United States - Wikipedia.
 
-A student must be enrolled in at least one course, and there is no limit to the number of courses a student can be enrolled in.
-The university needs to store the following data for each student: first_name, last_name, email, date_of_birth, state, gpa and whether the student needs accessibility (for example, a room needs to have a ramp or elevator so that a student in wheelchair can have access to it). This information is not given in the dataset, but we decided to add so we make sure that if a student has special needs, the room needs to be appropriated.
+The requirements for the database are:
 
-A room has a name, maximum capacity and may or may not have a projector and/or computers. Additionally, some of the rooms are accessible to students with disabilities. A room belongs to a building that also has a name. The names of the buildings are unique.
-For each course there are several types of assessment (exam_type), but they are defined. Each assessment will take place on a specific date and time (start time and end time), but the same assessment may take place, at the same date and time, in more than one room. The start time and end time are not in the dataset but given the fact that they are important fields, they are added in the database structure. A type of assessment may or may not require a projector and/or computers. The attendance of each student in each assessment modality of the course in which the student is enrolled will be recorded, as well as the grade obtained.
+A student must be enrolled in at least one course, and there is not a limit for the number of courses that a student can be enrolled in. Each individual enrollment is an event with an associated ID.
+The university needs to store the following data for each student: first_name, last_name, email, date_of_birth, state, gpa from high school, and if the student needs accessibility (for example, a room needs to have a ramp or an elevator so that a student in a wheelchair can get access to it). Each student has a unique student number.
+Email is composed by <first_name>.<last_name>@jsuniversity.edu.
+
+A room has a name, a maximum capacity, and can have or not projector and/or computers. Also, some of the rooms are accessible to students with disabilities. A room belongs to a building which also has a name. In the whole university there are no rooms with the same name. And the names of the buildings are also unique. There is an identifier code for every room and building.
+
+For each course there are several but well-defined evaluation types (exam_names).  Evaluations will occur each one of them on a specific date and time(start time and end time), but the same evaluation can take place, and at the same time, in more than one room for different students. An evaluation type might require or not a projector and/or computers. Attendance of each student for each evaluation type of a course ,in which the student is enrolled, will be recorded and the grade achieved as well.
 
 ---
 The project is composed by the following steps:
