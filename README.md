@@ -10,12 +10,12 @@ University JS is a university that offers to its students an intensive 1-year As
 The requirements for the database are:
 
 A student can enroll in many courses, and there is not a limit for the number of courses that a student can be enrolled in. Each enrollment is an association between student and course.
-The university needs to store the following data for each student: first_name, last_name, email, date_of_birth, state, gpa , and if the student needs accessibility (for example, a room needs to have a ramp or an elevator so that a student in a wheelchair can get access to it). Each student has a unique student number.
+The university needs to store the following data for each student: first_name, last_name, email, date_of_birth, state, gpa from high school, and if the student needs accessibility (for example, a room needs to have a ramp or an elevator so that a student in a wheelchair can get access to it). Each student has a unique student number.
 Email is composed by <first_name>.<last_name>@jsuniversity.edu.
 
-A room has a name, a maximum capacity, and can have or not projector and/or computers. Also, some of the rooms are accessible to students with disabilities. A room belongs to a building which also has a name. In the whole university there are no rooms with the same name. And the names of the buildings are also unique. There is an identifier code for every room and building.
+A room has a name, a maximum capacity, and can have or not projector and/or computers. Also, some of the rooms are accessible to students with disabilities. A room belongs to a building which also has a name. The names of the buildings are also unique. There is an identifier code for every room and building.
 
-For each course there are several but well-defined evaluation types (exam_names).  Evaluations will occur each one of them on a specific date and time(start time and end time), but the same evaluation can take place, and at the same time, in more than one room for different students. An evaluation type might require or not a projector and/or computers. Attendance of each student for each evaluation type of a course ,in which the student is enrolled, will be recorded and the grade achieved as well.
+For each course there are several but well-defined evaluation types (exam_names).  Each Evaluations will occur in a specific date and time(start time and end time), but the same evaluation can take place, and at the same time, in more than one room for different students. An evaluation type might require or not a projector and/or computers. Attendance of each student for each evaluation type of a course ,in which the student is enrolled, will be recorded and the grade achieved as well.
 
 ---
 The project is composed by the following steps:
@@ -27,9 +27,9 @@ Based on the fields provided, a UML model of the database was created and the re
 **2. Creation of SQL script (grades.sql):**
 This script will create the tables in the database. For this section we also created 2 triggers:
 
-- trigger_validate_exam_room_capacity: this trigger raises an error if we try to insert into the table attendance a number of student_id(s) for an  exam_id taking place on a room_id that overflows the capacity of the room. ;
+- trigger_validate_exam_room_capacity: this trigger raises an error if we try to insert into the table attendance a number of student_id(s) for an exam_id taking place on a room_id that overflows the capacity of the room;
 
-- trigger_validate_exam_room_constraints: this trigger raises an error if we try to insert into the table attendance a student with a disability in a room that is not accessiible. On the other hand, it also raises an error if the exam needs to be in a room with projector or computer, the room don't this devices.
+- trigger_validate_exam_room_constraints: this trigger raises an error if we try to insert into the table attendance a student with a disability in a room that is not accessiible. On the other hand, it also raises an error if the exam needs to be in a room with projector or computer and the room don't have this devices.
 
 Besides the main sql code(grades.sql), we also created a separate folder called helper where we have a python code (Load_aux.py) with the databases configuration from the .ini file were we load the whole dataset, an sql code with DQL, DML, inserts and testing (including trigger testing).
 
