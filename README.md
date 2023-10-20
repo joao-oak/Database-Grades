@@ -9,7 +9,7 @@ University JS is a university that offers to its students an intensive 1-year As
 
 The requirements for the database are:
 
-A student must be enrolled in at least one course, and there is not a limit for the number of courses that a student can be enrolled in. Each individual enrollment is an event with an associated ID.
+A student can enroll in many courses, and there is not a limit for the number of courses that a student can be enrolled in. Each enrollment is an association between student and course.
 The university needs to store the following data for each student: first_name, last_name, email, date_of_birth, state, gpa , and if the student needs accessibility (for example, a room needs to have a ramp or an elevator so that a student in a wheelchair can get access to it). Each student has a unique student number.
 Email is composed by <first_name>.<last_name>@jsuniversity.edu.
 
@@ -27,9 +27,11 @@ Based on the fields provided, a UML model of the database was created and the re
 **2. Creation of SQL script (grades.sql):**
 This script will create the tables in the database. For this section we also created 2 triggers:
 
-- trigger_validate_exam_room_capacity: this trigger was created on attendance table. It makes sure that the amount of students that are going to do an exam is not greater than the   capacity of the room;
+- trigger_validate_exam_room_capacity: this trigger raises an error if we try to insert into the table attendance a number of student_id(s) for an  exam_id taking place on a room_id that overflows the capacity of the room. ;
 
-- trigger_validate_exam_room_constraints: this trigger was also created on attendance. It guarantees that id there's any student with a disability, the room needs to be assecible for him. On the other hand, it also asure that if the exam needs to be in a room with projector or computer, the room has this devices. 
+- trigger_validate_exam_room_constraints: this trigger raises an error if we try to insert into the table attendance a student with a disability in a room that is not accessiible. On the other hand, it also raises an error if the exam needs to be in a room with projector or computer, the room don't this devices.
+
+Besides the main sql code(grades.sql), we also created a separate folder called helper where we have a python code (Load_aux.py) with the databases configuration from the .ini file were we load the whole dataset, an sql code with DQL, DML, inserts and testing (including trigger testing).
 
 
 **3. Load the Data into the Data Base (load_grades.py):**
@@ -57,6 +59,15 @@ In order to extract some meaningful information from the database the following 
 - Scatter plot with relation between gpa and average grades for each student with a linear regression.
 
 ---
+**Future work:**
+
+For the future work we believe that some of the following improvements can be made:
+- Calculated field email;
+- Creation of indexes;
+- Cardinality issue follow-up if needed;
+- Assure that a we can not insert in the databases, exam that are not related to a specific course. For that a list of the related exam for each course should be provided.
+
+
 **Contribution of each student in the project:**
 
 The contribution of each student in the project in presented in a range from 0 to 100% representing the effort that each one made:
