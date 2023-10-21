@@ -1,0 +1,10 @@
+Student (student_id ||, first_name [NN], last_name [NN], email [UN, NN], date_of_birth, gpa, state, needs_accessibility)
+Course (course_id ||, course_name [UN, NN])
+Exam_type (type_id ||, exam_name [UN, NN])
+Building (building_id ||, building_name [UN, NN])
+Room (room_id ||, room_name [UN, NN], capacity, has_projector, has_computers, is_accessible, #building -> Building [NN])
+Exam (exam_id ||, exam_date, start_time, end_time, needs_projector, needs_computer, #type -> Exam_type [NN], #course -> Course [NN])
+Enrollment ((#student -> Student, #course -> Course) ||)
+Attendance((#student -> Student, #exam -> Exam) ||, #room -> Room, grade, has_attended)
+
+|| - primary key
